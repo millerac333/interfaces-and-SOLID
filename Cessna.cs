@@ -1,31 +1,30 @@
-public class Cessna : IVehicle, IAirVehicle
+using System;
+
+namespace interfaces
 {
-    // public int Wheels { get; set; } = 3;
-    // public int Doors { get; set; } = 3;
-    // public int PassengerCapacity { get; set; } = 113;
-    // public bool Winged { get; set; } = true;
-    // public string TransmissionType { get; set; } = "None";
-    // public double EngineVolume { get; set; } = 31.1;
-    // public double MaxLandSpeed { get; set; }
-    // public double MaxAirSpeed { get; set; } = 309.0;
+    public class Cessna : IVehicle, IAir
+    {
+        public int PassengerCapacity { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
+        public string TransmissionType { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
+        public double EngineVolume { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
+        public int Wheels { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
+        public int Doors { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
+        public bool Winged { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
+        public double MaxAirSpeed { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
 
-    // public void Drive()
-    // {
-    //     throw new NotImplementedException();
-    // }
+        public void Fly()
+        {
+            throw new NotImplementedException();
+        }
 
-    // public void Fly()
-    // {
-    //     Console.WriteLine("The Cessna effortlessly glides through the clouds like a gleaming god of the Sun");
-    // }
+        public void Start()
+        {
+            throw new NotImplementedException();
+        }
 
-    // public void Start()
-    // {
-    //     throw new NotImplementedException();
-    // }
-
-    // public void Stop()
-    // {
-    //     throw new NotImplementedException();
-    // }
+        public void Stop()
+        {
+            throw new NotImplementedException();
+        }
+    }
 }

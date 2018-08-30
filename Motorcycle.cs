@@ -1,32 +1,29 @@
-public class Motorcycle : IVehicle, ILandVehicle
+using System;
+
+namespace interfaces
 {
-    // public int Wheels { get; set; } = 2;
-    // public int Doors { get; set; } = 0;
-    // public int PassengerCapacity { get; set; }
-    // public bool Winged { get; set; } = false;
-    // public string TransmissionType { get; set; } = "Manual";
-    // public double EngineVolume { get; set; } = 1.3;
-    // public double MaxWaterSpeed { get; set; }
-    // public double MaxLandSpeed { get; set; } = 160.4;
-    // public double MaxAirSpeed { get; set; }
+    public class Motorcycle : IVehicle, ILand
+    {
+        public int PassengerCapacity { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
+        public string TransmissionType { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
+        public double EngineVolume { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
+        public int Wheels { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
+        public int Doors { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
+        public double MaxLandSpeed { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
 
-    // public void Drive()
-    // {
-    //     Console.WriteLine("The motorcycle screams down the highway");
-    // }
+        public void Drive()
+        {
+            throw new NotImplementedException();
+        }
 
-    // public void Fly()
-    // {
-    //     throw new NotImplementedException();
-    // }
+        public void Start()
+        {
+            throw new NotImplementedException();
+        }
 
-    // public void Start()
-    // {
-    //     throw new NotImplementedException();
-    // }
-
-    // public void Stop()
-    // {
-    //     throw new NotImplementedException();
-    // }
+        public void Stop()
+        {
+            throw new NotImplementedException();
+        }
+    }
 }
