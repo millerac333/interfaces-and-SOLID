@@ -1,14 +1,13 @@
-public class Cessna : IVehicle
+public class Cessna : IVehicle, IAirVehicle
 {
-    public int Wheels { get; set; } = 3;
-    public int Doors { get; set; } = 3;
-    public int PassengerCapacity { get; set; } = 113;
-    public bool Winged { get; set; } = true;
-    public string TransmissionType { get; set; } = "None";
-    public double EngineVolume { get; set; } = 31.1;
-    public double MaxWaterSpeed { get; set; }
-    public double MaxLandSpeed { get; set; }
-    public double MaxAirSpeed { get; set; } = 309.0;
+    // public int Wheels { get; set; } = 3;
+    // public int Doors { get; set; } = 3;
+    // public int PassengerCapacity { get; set; } = 113;
+    // public bool Winged { get; set; } = true;
+    // public string TransmissionType { get; set; } = "None";
+    // public double EngineVolume { get; set; } = 31.1;
+    // public double MaxLandSpeed { get; set; }
+    // public double MaxAirSpeed { get; set; } = 309.0;
 
     // public void Drive()
     // {
