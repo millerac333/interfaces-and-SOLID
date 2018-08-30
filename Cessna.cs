@@ -4,27 +4,24 @@ namespace interfaces
 {
     public class Cessna : IVehicle, IAir
     {
-        public int PassengerCapacity { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-        public string TransmissionType { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-        public double EngineVolume { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-        public int Wheels { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-        public int Doors { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-        public bool Winged { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-        public double MaxAirSpeed { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
+        public int PassengerCapacity { get; set; } = 3;
+        public double EngineVolume { get; set; } = 31.3;
+        public int Wheels { get; set; } = 3;
+        public int Doors { get; set; } = 3;
+        public bool Winged { get; set; } = true;
+        public double MaxAirSpeedMPH { get; set; } = 188;
 
         public void Fly()
         {
-            throw new NotImplementedException();
+            Console.WriteLine("The Cessna is a small, privite airplane is built in Witchita, Kansas.");
         }
-
         public void Start()
         {
-            throw new NotImplementedException();
+            Console.WriteLine("The Cessna is powered by a piston engine.");
         }
-
         public void Stop()
         {
-            throw new NotImplementedException();
+            Console.WriteLine("One must first land a Cessna before it stops.");
         }
     }
 }
